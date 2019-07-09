@@ -25,6 +25,13 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('bot:run')->everyMinute();
+
+        $schedule->command('bot:five')->everyFiveMinutes();
+        $schedule->command('bot:ten')->everyTenMinutes();
+        $schedule->command('bot:fiveteen')->everyFifteenMinutes();
+        $schedule->command('bot:thirty')->everyThirtyMinutes();
+        $schedule->command('bot:sixty')->hourly();
+
         $schedule->command('price:update')->everyTenMinutes();
     }
 
