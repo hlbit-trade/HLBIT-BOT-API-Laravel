@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Exchange;
 use App\LogActivity;
 use App\Setting;
 use Illuminate\Http\Request;
@@ -80,16 +81,15 @@ class HomeController extends Controller
             return redirect('log');
         }
 
-        $btc_price = getLatestPrice('usd');
-        $eth = getLatestPrice('eth');
-        $eth_price = $btc_price['price'] / $eth['price'];
+        $btc_price = Exchange::where('code','=','btc')->orderBy('created_at','desc')->first();
+        $eth_price = Exchange::where('code','=','eth')->orderBy('created_at','desc')->first();
         return view('trade',[
             'data'=>$data['ticker'],
             'balance_fiat' => $fiat['data'],
             'balance_crypto' => $crypto['data'],
             'setting'=>Setting::all(),
-            'btc_price'=>$btc_price['price'],
-            'eth_price'=>$eth_price
+            'btc_price'=>$btc_price->rate,
+            'eth_price'=>$eth_price->rate
         ]);
     }
 
