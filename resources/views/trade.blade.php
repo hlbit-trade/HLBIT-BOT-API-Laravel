@@ -111,6 +111,7 @@
                                                                 <option value="0">No Repeat</option>
                                                                 <option value="1">1 Minutes</option>
                                                                 <option value="5">5 Minutes</option>
+                                                                <option value="10">10 Minutes</option>
                                                                 <option value="15">15 Minutes</option>
                                                                 <option value="30">30 Minutes</option>
                                                                 <option value="60">60 Minutes</option>
@@ -136,7 +137,7 @@
                                                                 <input type="number" class="form-control col-9" step="any" name="value_24hr" placeholder="Enter 24Hr" required>
                                                             </div>
 
-                                                            <label>On Price</label>
+                                                            <label>On Last Price</label>
                                                             <div class="row" style="margin-left: 1px; margin-right: 1px">
                                                                 <select name="type_price" class="form-control col-3" required>
                                                                     <option value="none">None</option>
@@ -145,6 +146,14 @@
                                                                     <option value="less">Less Than</option>
                                                                 </select>
                                                                 <input type="number" class="form-control col-9" step="any" name="value_price" placeholder="Enter Price" required>
+                                                            </div>
+
+                                                            <label>Price</label>
+                                                            <div class="row" style="margin-left: 1px; margin-right: 1px">
+                                                                <select class="form-control col-3" required>
+                                                                    <option selected>% of Global Price</option>
+                                                                </select>
+                                                                <input type="number" class="form-control col-9" step="any" name="globalprice" placeholder="Amount % of Global Price" required>
                                                             </div>
                                                         </div>
                                                     </div>

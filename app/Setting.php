@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Setting extends Model
 {
     protected $table = 'setting';
-    protected $fillable = ['pair','type','repeat','type_24hr','value_24hr','type_price','value_price','amount','status','user_id'];
+    protected $fillable = ['pair','type','repeat','type_24hr','value_24hr','type_price','value_price','amount','status','user_id','globalprice'];
 
     const STATUS_ACTIVE = 1;
     const STATUS_STOP = 0;
