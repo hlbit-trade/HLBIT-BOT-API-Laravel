@@ -150,10 +150,10 @@
 
                                                             <label>Price</label>
                                                             <div class="row" style="margin-left: 1px; margin-right: 1px">
-                                                                <select class="form-control col-3" required>
+                                                                <select class="form-control col-6" required>
                                                                     <option selected>% of Global Price</option>
                                                                 </select>
-                                                                <input type="number" class="form-control col-9" step="any" name="globalprice" placeholder="Amount % of Global Price" required>
+                                                                <input type="number" class="form-control col-6" step="any" name="globalprice" placeholder="Amount % of Global Price" required>
                                                             </div>
                                                         </div>
                                                     </div>
