@@ -34,6 +34,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('bot:sixty')->hourly();
 
         $schedule->command('price:update')->everyTenMinutes();
+        $schedule->command('auto:cancel')->everyMinute();
     }
 
     /**
