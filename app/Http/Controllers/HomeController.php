@@ -88,7 +88,7 @@ class HomeController extends Controller
             'data'=>$data['ticker'],
             'balance_fiat' => $fiat['data'],
             'balance_crypto' => $crypto['data'],
-            'setting'=>Setting::where('status','=',Setting::STATUS_ACTIVE)->get(),
+            'setting'=>Setting::where('status','<>',Setting::STATUS_DONE)->get(),
             'btc_price'=>$btc_price->rate,
             'eth_price'=>$eth_price->rate
         ]);
