@@ -80,11 +80,16 @@ class HomeController extends Controller
             return redirect('log');
         }
 
+        $btc_price = getLatestPrice('usd');
+        $eth = getLatestPrice('eth');
+        $eth_price = $btc_price['price'] / $eth['price'];
         return view('trade',[
             'data'=>$data['ticker'],
             'balance_fiat' => $fiat['data'],
             'balance_crypto' => $crypto['data'],
-            'setting'=>Setting::all()
+            'setting'=>Setting::all(),
+            'btc_price'=>$btc_price['price'],
+            'eth_price'=>$eth_price
         ]);
     }
 

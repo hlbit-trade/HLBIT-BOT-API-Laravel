@@ -40,3 +40,34 @@ if(!function_exists('executeApi')){
         return $dec;
     }
 }
+
+if(!function_exists('getLatestPrice')){
+    function getLatestPrice($code){
+        $url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest';
+        $parameters = [
+            'start' => '1',
+            'limit' => '1',
+            'convert' => strtoupper($code)
+        ];
+
+        $headers = [
+            'Accepts: application/json',
+            'X-CMC_PRO_API_KEY: 081ca895-2faa-43e4-99e0-098c05a8e6dc'
+        ];
+        $qs = http_build_query($parameters); // query string encode the parameters
+        $request = "{$url}?{$qs}"; // create the request URL
+
+
+        $curl = curl_init(); // Get cURL resource
+// Set cURL options
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $request,            // set the request URL
+            CURLOPT_HTTPHEADER => $headers,     // set the headers
+            CURLOPT_RETURNTRANSFER => 1         // ask for raw response instead of bool
+        ));
+
+        $response = curl_exec($curl); // Send the request, save the response
+        $res = json_decode($response, true); // print json decoded response
+        return $res['data'][0]['quote'][strtoupper($code)];
+    }
+}

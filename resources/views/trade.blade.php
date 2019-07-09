@@ -36,6 +36,17 @@
                         </script>
                         <br>
                         <div class="row">
+                            <div class="col-md-6">
+                                <h5 class="text-center">BTC Price (coinmarketcap)</h5>
+                                <h4 class="text-center">{{ $btc_price }}</h4>
+                            </div>
+                            <div class="col-md-6">
+                                <h5 class="text-center">ETH Price (coinmarketcap)</h5>
+                                <h4 class="text-center">{{ $eth_price }}</h4>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
                             <div class="col-md-2">
                                 <p>Last Price</p>
                                 <h5>{{ $data['last'] }}</h5>
