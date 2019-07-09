@@ -43,6 +43,7 @@ class BotRun extends Command
     {
         $setting = Setting::where('status',Setting::STATUS_ACTIVE)->get();
         foreach($setting as $ini){
+            Log::info('Id : '.$ini->id);
             $user = User::find($ini->user_id);
 
             $url = 'https://staging.hlbit.trade/api/ticker/'.$ini->pair;
