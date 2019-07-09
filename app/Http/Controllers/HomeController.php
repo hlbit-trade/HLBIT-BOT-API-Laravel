@@ -30,6 +30,7 @@ class HomeController extends Controller
             'log'=>$log
         ]);
     }
+
     public function index()
     {
         $data = $this->execute('getInfo');
@@ -173,5 +174,20 @@ class HomeController extends Controller
         curl_close($ch);
         $ch = null;
         return $dec;
+    }
+
+    public function enable(Request $request, $id){
+        $setting = Setting::find($id);
+        $setting->status = Setting::STATUS_ACTIVE;
+        $setting->save();
+
+        return redirect()->back();
+    }
+    public function disable(Request $request, $id){
+        $setting = Setting::find($id);
+        $setting->status = Setting::STATUS_STOP;
+        $setting->save();
+
+        return redirect()->back();
     }
 }

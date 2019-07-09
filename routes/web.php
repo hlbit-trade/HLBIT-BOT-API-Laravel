@@ -24,3 +24,6 @@ Route::get('/log', 'HomeController@showLog')->name('log');
 
 Route::post('/cancel-order','HomeController@cancelOrder')->name('cancel-order');
 Route::post('/trade','HomeController@settingSave')->name('setting.save');
+
+Route::post('/enable/{id}','HomeController@enable')->name('enable');
+Route::post('/disable/{id}','HomeController@disable')->name('disable');

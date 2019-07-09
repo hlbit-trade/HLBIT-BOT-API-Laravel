@@ -207,9 +207,16 @@
                                             </td>
                                             <td>
                                                 @if($ini->status == 1)
-                                                    <button class="btn btn-sm btn-danger">disable</button>
+                                                    <form action="{{ route('disable',$ini->id) }}" method="POST">
+                                                        @csrf
+                                                        <button type="submit" class="btn btn-sm btn-danger">disable</button>
+                                                    </form>
+
                                                 @elseif($ini->status == 0)
-                                                    <button class="btn btn-sm btn-succedd">enable</button>
+                                                    <form action="{{ route('enable',$ini->id) }}" method="POST">
+                                                        @csrf
+                                                        <button type="submit" class="btn btn-sm btn-succedd">enable</button>
+                                                    </form>
                                                 @endif
                                             </td>
                                         </tr>
