@@ -45,7 +45,7 @@ class PriceUpdate extends Command
 
         $exchange = new Exchange();
         $exchange->code = 'btc';
-        $exchange->rate = $btc_price;
+        $exchange->rate = $btc_price['price'];
         $exchange->save();
         Log::info('price btc updated to '.$btc_price['price']);
 
