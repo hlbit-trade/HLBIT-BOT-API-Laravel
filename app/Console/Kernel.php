@@ -26,6 +26,7 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('bot:run')->everyMinute();
 
+        $schedule->command('bot:one')->everyMinute();
         $schedule->command('bot:five')->everyFiveMinutes();
         $schedule->command('bot:ten')->everyTenMinutes();
         $schedule->command('bot:fiveteen')->everyFifteenMinutes();

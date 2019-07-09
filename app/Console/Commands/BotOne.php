@@ -4,25 +4,24 @@ namespace App\Console\Commands;
 
 use App\LogActivity;
 use App\Setting;
-use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 
-class BotRun extends Command
+class BotOne extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'bot:run';
+    protected $signature = 'bot:one';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Runing bot based on setting';
+    protected $description = 'run every 1 minutes bot';
 
     /**
      * Create a new command instance.
@@ -41,8 +40,8 @@ class BotRun extends Command
      */
     public function handle()
     {
-        $setting = Setting::where('repeat','=',0)->where('status','=',Setting::STATUS_ACTIVE)->get();
-        foreach($setting as $ini){
+        $setting = Setting::where('repeat','=',1)->where('status','=',Setting::STATUS_ACTIVE)->get();
+        foreach ($setting as $ini){
             Log::info('Id : '.$ini->id);
             $user = User::find($ini->user_id);
 
@@ -139,6 +138,22 @@ class BotRun extends Command
                         continue;
                     }
                 }
+            }
+
+            if($ini->globalprice > 0){
+                if($ini->pair == 'btcusd'){
+                    $btc = getLatestPrice('usd');
+                    $btc_price = $btc['price'];
+
+                    $price = $ini->globalprice / 100 * $btc_price;
+                } elseif($ini->pair == 'ethusd'){
+                    $btc_price2 = getLatestPrice('usd');
+                    $eth = getLatestPrice('eth');
+                    $eth_price = $btc_price2['price'] / $eth['price'];
+
+                    $price = $ini->globalprice / 100 * $eth_price;
+                }
+
             }
 
             $exec = executeApi('trade',
