@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\LogActivity;
 use App\Setting;
+use App\User;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
 
