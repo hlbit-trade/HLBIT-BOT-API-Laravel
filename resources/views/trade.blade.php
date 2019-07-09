@@ -174,8 +174,9 @@
                                         <th scope="col">Type</th>
                                         <th scope="col">Repeat</th>
                                         <th scope="col">24Hr</th>
-                                        <th scope="col">Price</th>
+                                        <th scope="col">Last Price</th>
                                         <th scope="col">Amount</th>
+                                        <th scope="col">Price</th>
                                         <th scope="col">Status</th>
                                         <th scope="col">Action</th>
                                     </tr>
@@ -194,6 +195,7 @@
                                             <td>{{ $ini->type_24hr }} {{ $ini->value_24hr }} %</td>
                                             <td>{{ $ini->type_price }} {{ $ini->value_price }}</td>
                                             <td>{{ $ini->amount }} % of Balance</td>
+                                            <td>{{ $ini->globalprice }} % of Global Price</td>
                                             <td>
                                                 @if($ini->status == 1)
                                                     <span class="badge badge-success">on</span>
