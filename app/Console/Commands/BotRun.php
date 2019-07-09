@@ -101,19 +101,19 @@ class BotRun extends Command
                     if($ini->value_price == $value_price){
                         $price = $value_price;
                     } else {
-                        break;
+                        continue;
                     }
                 } elseif($ini->type_price == 'more'){
                     if($ini->value_price < $value_price){
                         $price = $value_price;
                     } else {
-                        break;
+                        continue;
                     }
                 } elseif($ini->type_price == 'less'){
                     if($ini->value_price > $value_price){
                         $price = $value_price;
                     } else {
-                        break;
+                        continue;
                     }
                 }
             }
@@ -124,19 +124,19 @@ class BotRun extends Command
                     if($ini->value_24hr == $value_24hr){
                         $price = $value_price;
                     } else {
-                        break;
+                        continue;
                     }
                 } elseif($ini->type_24hr == 'more'){
                     if($ini->value_24hr < $value_24hr){
                         $price = $value_price;
                     } else {
-                        break;
+                        continue;
                     }
                 } elseif($ini->type_24hr == 'less'){
                     if($ini->value_24hr > $value_24hr){
                         $price = $value_price;
                     } else {
-                        break;
+                        continue;
                     }
                 }
             }
