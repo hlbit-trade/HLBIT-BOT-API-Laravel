@@ -31,6 +31,11 @@ class HomeController extends Controller
         ]);
     }
 
+    public function clearLog(Request $request){
+        $log = LogActivity::truncate();
+        return redirect('/log');
+    }
+
     public function index()
     {
         $data = $this->execute('getInfo');
@@ -183,10 +188,18 @@ class HomeController extends Controller
 
         return redirect()->back();
     }
+
     public function disable(Request $request, $id){
         $setting = Setting::find($id);
         $setting->status = Setting::STATUS_STOP;
         $setting->save();
+
+        return redirect()->back();
+    }
+
+    public function delete(Request $request, $id){
+        $setting = Setting::find($id);
+        $setting->delete();
 
         return redirect()->back();
     }

@@ -215,7 +215,11 @@
                                                 @elseif($ini->status == 0)
                                                     <form action="{{ route('enable',$ini->id) }}" method="POST">
                                                         @csrf
-                                                        <button type="submit" class="btn btn-sm btn-succedd">enable</button>
+                                                        <button type="submit" class="btn btn-sm btn-success">enable</button>
+                                                    </form>
+                                                    <form action="{{ route('delete',$ini->id) }}" method="POST">
+                                                        @csrf
+                                                        <button type="submit" class="btn btn-sm btn-danger">delete</button>
                                                     </form>
                                                 @endif
                                             </td>

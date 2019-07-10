@@ -50,6 +50,7 @@
                             </thead>
                             <tbody>
                             @foreach($data as $ini)
+                            @if($ini['status'] == 'pending')
                             <tr>
                                 <th>{{ $ini['id'] }}</th>
                                 <td><span class="badge badge-{{ $ini['trade_type']=='buy'?'success':'danger' }}">{{ $ini['trade_type'] }}</span></td>
@@ -75,6 +76,7 @@
                                     @endif
                                 </td>
                             </tr>
+                            @endif
                             @endforeach
                             </tbody>
                         </table>

@@ -21,9 +21,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/trade', 'HomeController@trade')->name('trade');
 Route::get('/order-list', 'HomeController@history')->name('history');
 Route::get('/log', 'HomeController@showLog')->name('log');
+Route::post('/log', 'HomeController@clearLog')->name('clearlog');
 
 Route::post('/cancel-order','HomeController@cancelOrder')->name('cancel-order');
 Route::post('/trade','HomeController@settingSave')->name('setting.save');
 
 Route::post('/enable/{id}','HomeController@enable')->name('enable');
 Route::post('/disable/{id}','HomeController@disable')->name('disable');
+Route::post('/delete/{id}','HomeController@delete')->name('delete');
+

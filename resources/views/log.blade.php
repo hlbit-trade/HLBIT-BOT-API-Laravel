@@ -22,6 +22,10 @@
                     <div class="card-body">
                         <h5>Log History</h5>
                         <br>
+                        <form action="{{ route('clearlog') }}" method="POST">
+                            @csrf
+                            <button type="submit" class="btn btn-danger btn-sm">Clear Log</button>
+                        </form>
                         <table class="table">
                             <thead>
                             <tr>
