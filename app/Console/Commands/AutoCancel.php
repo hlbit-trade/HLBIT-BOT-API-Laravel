@@ -50,7 +50,7 @@ class AutoCancel extends Command
                     $count_pending += 1;
                 }
             }
-            if($count_pending > 10){
+            if($count_pending > 20){
                 foreach ($list_order['data'] as $its){
                     if($its['status'] == 'pending'){
                         $cancel = executeApi('cancelOrder',['order_id'=>$its['id']],$user);
