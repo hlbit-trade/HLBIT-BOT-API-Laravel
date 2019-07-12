@@ -22,19 +22,19 @@
                     <div class="card-body">
                         <h5>Order history for market : {{ strtoupper($market) }}</h5>
 
-                        <form id="form-market" action="" method="GET">
-                            <label>Select Market</label>
-                            <select class="form-control" name="pair" required onchange="submit()">
-                                <option value="btcusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'btcusd'? 'selected':'' }}>BTCUSD</option>
-                                <option value="ethusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'ethusd'? 'selected':'' }}>ETHUSD</option>
-                                <option value="bpinkusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'bpinkusd'? 'selected':'' }}>BPINKUSD</option>
-                            </select>
-                        </form>
-                        <script>
-                            function submit() {
-                                document.getElementById('form-market').submit();
-                            }
-                        </script>
+                        {{--<form id="form-market" action="" method="GET">--}}
+                            {{--<label>Select Market</label>--}}
+                            {{--<select class="form-control" name="pair" required onchange="submit()">--}}
+                                {{--<option value="btcusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'btcusd'? 'selected':'' }}>BTCUSD</option>--}}
+                                {{--<option value="ethusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'ethusd'? 'selected':'' }}>ETHUSD</option>--}}
+                                {{--<option value="bpinkusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'bpinkusd'? 'selected':'' }}>BPINKUSD</option>--}}
+                            {{--</select>--}}
+                        {{--</form>--}}
+                        {{--<script>--}}
+                            {{--function submit() {--}}
+                                {{--document.getElementById('form-market').submit();--}}
+                            {{--}--}}
+                        {{--</script>--}}
                         <br>
                         <table class="table">
                             <thead>

@@ -20,20 +20,20 @@
                     <div class="card-header">Trade</div>
 
                     <div class="card-body">
-                        <h5>Trade Action</h5>
-                        <form id="form-market" action="" method="GET">
-                            <label>Select Market</label>
-                            <select class="form-control" name="pair" required onchange="submit()">
-                                <option value="btcusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'btcusd'? 'selected':'' }}>BTCUSD</option>
-                                <option value="ethusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'ethusd'? 'selected':'' }}>ETHUSD</option>
-                                <option value="bpinkusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'bpinkusd'? 'selected':'' }}>BPINKUSD</option>
-                            </select>
-                        </form>
-                        <script>
-                            function submit() {
-                                document.getElementById('form-market').submit();
-                            }
-                        </script>
+                        <h5>Trade Action for market BTCUSD</h5>
+                        {{--<form id="form-market" action="" method="GET">--}}
+                            {{--<label>Select Market</label>--}}
+                            {{--<select class="form-control" name="pair" required onchange="submit()">--}}
+                                {{--<option value="btcusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'btcusd'? 'selected':'' }}>BTCUSD</option>--}}
+                                {{--<option value="ethusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'ethusd'? 'selected':'' }}>ETHUSD</option>--}}
+                                {{--<option value="bpinkusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'bpinkusd'? 'selected':'' }}>BPINKUSD</option>--}}
+                            {{--</select>--}}
+                        {{--</form>--}}
+                        {{--<script>--}}
+                            {{--function submit() {--}}
+                                {{--document.getElementById('form-market').submit();--}}
+                            {{--}--}}
+                        {{--</script>--}}
                         <br>
                         <div class="row">
                             <div class="col-md-6">
@@ -99,7 +99,7 @@
                                                         <div class="col-md-12">
                                                             <h5 class="text-center">Select your condition</h5>
 
-                                                            <input type="hidden" name="pair" value="{{ isset($_GET['pair']) ? $_GET['pair'] :'btcusd' }}">
+                                                            <input type="hidden" name="pair" value="btcusd">
                                                             <label>Type</label>
                                                             <select name="type" class="form-control">
                                                                 <option value="buy">Buy</option>
