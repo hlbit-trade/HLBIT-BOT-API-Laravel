@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b5cd5ae-f857-4dd8-9cba-29d8c9d451a0" name="Default Changelist" comment="hlbit bot v 1.0">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotFive.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotFive.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotOne.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotOne.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotRun.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotRun.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotSixty.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotSixty.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotTen.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotTen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotThirty.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotThirty.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+    <list default="true" id="6b5cd5ae-f857-4dd8-9cba-29d8c9d451a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/views/trade.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/trade.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2281">
@@ -42,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/PriceUpdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+            <state relative-caret-position="284">
+              <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="40" />
               <folding>
                 <element signature="e#40#57#0#PHP" expanded="true" />
               </folding>
@@ -87,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="48" column="82" selection-start-line="48" selection-start-column="82" selection-end-line="48" selection-end-column="82" />
+            <state relative-caret-position="580">
+              <caret line="45" selection-start-line="45" selection-end-line="48" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -114,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotTen.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/trade.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+            <state relative-caret-position="380">
+              <caret line="29" column="135" selection-start-line="29" selection-start-column="135" selection-end-line="29" selection-end-column="135" />
             </state>
           </provider>
         </entry>
@@ -168,7 +157,6 @@
         <option value="$PROJECT_DIR$/resources/views/log.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/AutoCancel.php" />
-        <option value="$PROJECT_DIR$/resources/views/trade.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/history.blade.php" />
         <option value="$PROJECT_DIR$/app/helper.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/BotFive.php" />
@@ -181,6 +169,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
+        <option value="$PROJECT_DIR$/resources/views/trade.blade.php" />
       </list>
     </option>
   </component>
@@ -339,6 +328,17 @@
               <item name="database" type="462c0819:PsiDirectoryNode" />
               <item name="seeds" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HLBIT-API-with-Laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HLBIT-API-with-Laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HLBIT-API-with-Laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HLBIT-API-with-Laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -391,7 +391,7 @@
       <workItem from="1562548849578" duration="40822000" />
       <workItem from="1562721217684" duration="10152000" />
       <workItem from="1562900522685" duration="499000" />
-      <workItem from="1564751304768" duration="1812000" />
+      <workItem from="1564751304768" duration="3422000" />
     </task>
     <task id="LOCAL-00001" summary="hlbit bot v 1.0">
       <created>1562573502129</created>
@@ -617,11 +617,25 @@
       <option name="project" value="LOCAL" />
       <updated>1562900811811</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="repair code flow">
+      <created>1564753151895</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1564753151895</updated>
+    </task>
+    <task id="LOCAL-00034" summary="hlbit bot v 1.0">
+      <created>1564753336307</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1564753336307</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58489000" />
+    <option name="totallyTimeSpent" value="60099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1920" height="1048" extended-state="6" />
@@ -654,6 +668,7 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="repair code flow" />
     <MESSAGE value="hlbit bot v 1.0" />
     <option name="LAST_COMMIT_MESSAGE" value="hlbit bot v 1.0" />
   </component>
@@ -764,13 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/trade.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/LogActivity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -851,16 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/PriceUpdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
@@ -885,13 +883,6 @@
           <folding>
             <element signature="e#7#38#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="48" column="82" selection-start-line="48" selection-start-column="82" selection-end-line="48" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -920,6 +911,30 @@
             <element signature="e#40#57#0#PHP" expanded="true" />
             <element signature="e#456#617#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="45" selection-start-line="45" selection-end-line="48" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/PriceUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/trade.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="29" column="135" selection-start-line="29" selection-start-column="135" selection-end-line="29" selection-end-column="135" />
         </state>
       </provider>
     </entry>
