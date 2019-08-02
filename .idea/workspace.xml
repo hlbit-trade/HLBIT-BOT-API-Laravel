@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b5cd5ae-f857-4dd8-9cba-29d8c9d451a0" name="Default Changelist" comment="">
+    <list default="true" id="6b5cd5ae-f857-4dd8-9cba-29d8c9d451a0" name="Default Changelist" comment="hlbit bot v 1.0">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotFive.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotFive.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotOne.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotOne.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotRun.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotRun.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotSixty.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotSixty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotTen.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotTen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotThirty.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotThirty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,41 +26,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+            <state relative-caret-position="-2281">
+              <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
               <folding>
-                <element signature="e#7#38#0#PHP" expanded="true" />
+                <element signature="e#40#57#0#PHP" expanded="true" />
+                <element signature="e#456#617#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/trade.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/PriceUpdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="168" column="48" selection-start-line="168" selection-start-column="48" selection-end-line="168" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Setting.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="208">
+              <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+              <folding>
+                <element signature="e#40#57#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,33 +54,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+            <state relative-caret-position="523">
+              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotRun.php">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/AutoCancel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="86" column="56" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="56" />
+            <state relative-caret-position="171">
+              <caret line="42" column="78" lean-forward="true" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
               <folding>
                 <element signature="e#40#60#0#PHP" expanded="true" />
-                <element signature="e#1528#1735#0#PHP" />
-                <element signature="e#2137#2344#0#PHP" />
-                <element signature="e#2674#2736#0#PHP" />
-                <element signature="e#3519#4288#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helper.php">
+        <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="399">
+              <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+              <folding>
+                <element signature="e#7#38#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,17 +87,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="13" lean-forward="true" selection-end-line="44" />
+            <state relative-caret-position="637">
+              <caret line="48" column="82" selection-start-line="48" selection-start-column="82" selection-end-line="48" selection-end-column="82" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+        <entry file="file://$PROJECT_DIR$/app/helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+            <state relative-caret-position="456">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotRun.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="67" />
               <folding>
                 <element signature="e#40#60#0#PHP" expanded="true" />
               </folding>
@@ -109,7 +114,33 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotTen.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotThirty.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>break</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>continue</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,25 +151,36 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-        <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_07_08_021423_create_log_table.php" />
         <option value="$PROJECT_DIR$/app/LogActivity.php" />
-        <option value="$PROJECT_DIR$/resources/views/history.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/log.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/database/migrations/2019_07_08_042026_create_setting_table.php" />
-        <option value="$PROJECT_DIR$/app/Setting.php" />
-        <option value="$PROJECT_DIR$/app/helper.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
-        <option value="$PROJECT_DIR$/resources/views/trade.blade.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/BotRun.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_09_081010_create_exchange_table.php" />
+        <option value="$PROJECT_DIR$/app/Exchange.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_07_09_083415_alter_setting_table_add_globalprice.php" />
+        <option value="$PROJECT_DIR$/app/Setting.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/PriceUpdate.php" />
+        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
+        <option value="$PROJECT_DIR$/resources/views/log.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/AutoCancel.php" />
+        <option value="$PROJECT_DIR$/resources/views/trade.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/history.blade.php" />
+        <option value="$PROJECT_DIR$/app/helper.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/BotFive.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/BotOne.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/BotRun.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/BotSixty.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/BotTen.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/BotThirty.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
       </list>
     </option>
   </component>
@@ -228,10 +270,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="355" />
-    <option name="y" value="113" />
-    <option name="width" value="954" />
-    <option name="height" value="789" />
+    <option name="x" value="960" />
+    <option name="y" value="118" />
+    <option name="width" value="950" />
+    <option name="height" value="786" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -281,42 +323,21 @@
             <path>
               <item name="HLBIT-API-with-Laravel" type="b2602c69:ProjectViewProjectNode" />
               <item name="HLBIT-API-with-Laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HLBIT-API-with-Laravel" type="b2602c69:ProjectViewProjectNode" />
               <item name="HLBIT-API-with-Laravel" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HLBIT-API-with-Laravel" type="b2602c69:ProjectViewProjectNode" />
               <item name="HLBIT-API-with-Laravel" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
               <item name="seeds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HLBIT-API-with-Laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HLBIT-API-with-Laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HLBIT-API-with-Laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HLBIT-API-with-Laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HLBIT-API-with-Laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HLBIT-API-with-Laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HLBIT-API-with-Laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HLBIT-API-with-Laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,7 +347,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hlbit.trade" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -334,6 +355,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Console/Commands" />
       <recent name="$PROJECT_DIR$/resources/views" />
     </key>
   </component>
@@ -366,7 +388,10 @@
       <option name="presentableId" value="Default" />
       <updated>1562317675776</updated>
       <workItem from="1562317688929" duration="5204000" />
-      <workItem from="1562548849578" duration="25389000" />
+      <workItem from="1562548849578" duration="40822000" />
+      <workItem from="1562721217684" duration="10152000" />
+      <workItem from="1562900522685" duration="499000" />
+      <workItem from="1564751304768" duration="1812000" />
     </task>
     <task id="LOCAL-00001" summary="hlbit bot v 1.0">
       <created>1562573502129</created>
@@ -445,16 +470,164 @@
       <option name="project" value="LOCAL" />
       <updated>1562575855349</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="hlbit bot v 1.0">
+      <created>1562638453028</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1562638453029</updated>
+    </task>
+    <task id="LOCAL-00013" summary="hlbit bot v 1.0">
+      <created>1562638949055</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1562638949055</updated>
+    </task>
+    <task id="LOCAL-00014" summary="hlbit bot v 1.0">
+      <created>1562659326647</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1562659326647</updated>
+    </task>
+    <task id="LOCAL-00015" summary="hlbit bot v 1.0">
+      <created>1562660240979</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1562660240979</updated>
+    </task>
+    <task id="LOCAL-00016" summary="hlbit bot v 1.0">
+      <created>1562660373914</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1562660373914</updated>
+    </task>
+    <task id="LOCAL-00017" summary="hlbit bot v 1.0">
+      <created>1562661416295</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1562661416295</updated>
+    </task>
+    <task id="LOCAL-00018" summary="hlbit bot v 1.0">
+      <created>1562661568227</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1562661568227</updated>
+    </task>
+    <task id="LOCAL-00019" summary="hlbit bot v 1.0">
+      <created>1562661625434</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1562661625434</updated>
+    </task>
+    <task id="LOCAL-00020" summary="hlbit bot v 1.0">
+      <created>1562661690534</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1562661690534</updated>
+    </task>
+    <task id="LOCAL-00021" summary="hlbit bot v 1.0">
+      <created>1562661826569</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1562661826569</updated>
+    </task>
+    <task id="LOCAL-00022" summary="hlbit bot v 1.0">
+      <created>1562661907030</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1562661907030</updated>
+    </task>
+    <task id="LOCAL-00023" summary="hlbit bot v 1.0">
+      <created>1562663149785</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1562663149785</updated>
+    </task>
+    <task id="LOCAL-00024" summary="hlbit bot v 1.0">
+      <created>1562663502483</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1562663502483</updated>
+    </task>
+    <task id="LOCAL-00025" summary="hlbit bot v 1.0">
+      <created>1562663698872</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1562663698872</updated>
+    </task>
+    <task id="LOCAL-00026" summary="hlbit bot v 1.0">
+      <created>1562663824721</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1562663824721</updated>
+    </task>
+    <task id="LOCAL-00027" summary="hlbit bot v 1.0">
+      <created>1562664542631</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1562664542631</updated>
+    </task>
+    <task id="LOCAL-00028" summary="hlbit bot v 1.0">
+      <created>1562664955598</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1562664955598</updated>
+    </task>
+    <task id="LOCAL-00029" summary="hlbit bot v 1.0">
+      <created>1562665010594</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1562665010594</updated>
+    </task>
+    <task id="LOCAL-00030" summary="hlbit bot v 1.0">
+      <created>1562746918794</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1562746918794</updated>
+    </task>
+    <task id="LOCAL-00031" summary="hlbit bot v 1.0">
+      <created>1562804764894</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1562804764894</updated>
+    </task>
+    <task id="LOCAL-00032" summary="hlbit bot v 1.0">
+      <created>1562900811811</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1562900811811</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30593000" />
+    <option name="totallyTimeSpent" value="58489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1920" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25294748" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12647374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -469,7 +642,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2600229" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.18671249" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -513,53 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/LogActivity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/log.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-          <folding>
-            <element signature="e#1013#1031#0#HTML" expanded="true" />
-            <element signature="e#1078#1100#0#HTML" expanded="true" />
-            <element signature="e#1146#1164#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/history.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="49" column="36" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="49" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_08_021423_create_log_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -581,79 +707,219 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helper.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="285">
+          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="13" lean-forward="true" selection-end-line="44" />
+        <state relative-caret-position="-741" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_09_081010_create_exchange_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_09_083415_alter_setting_table_add_globalprice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Bot:Five.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/log.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/trade.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="63" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/LogActivity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Exchange.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Setting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/history.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-604">
+          <caret line="29" column="78" selection-start-line="29" selection-start-column="78" selection-end-line="29" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotFive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="67" />
+          <folding>
+            <element signature="e#40#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotOne.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="79" column="26" lean-forward="true" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotSixty.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotTen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotThirty.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="48" column="67" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/PriceUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/AutoCancel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="42" column="78" lean-forward="true" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+          <folding>
+            <element signature="e#40#60#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        <state relative-caret-position="399">
+          <caret line="21" column="60" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
           <folding>
             <element signature="e#7#38#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+    <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-          <folding>
-            <element signature="e#40#60#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="637">
+          <caret line="48" column="82" selection-start-line="48" selection-start-column="82" selection-end-line="48" selection-end-column="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Setting.php">
+    <entry file="file://$PROJECT_DIR$/app/helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        <state relative-caret-position="456">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotRun.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="86" column="56" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="56" />
+        <state relative-caret-position="105">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="67" />
           <folding>
             <element signature="e#40#60#0#PHP" expanded="true" />
-            <element signature="e#1528#1735#0#PHP" />
-            <element signature="e#2137#2344#0#PHP" />
-            <element signature="e#2674#2736#0#PHP" />
-            <element signature="e#3519#4288#0#PHP" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/trade.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="168" column="48" selection-start-line="168" selection-start-column="48" selection-end-line="168" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+        <state relative-caret-position="-2281">
+          <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+            <element signature="e#456#617#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
