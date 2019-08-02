@@ -46,7 +46,7 @@ class BotRun extends Command
             Log::info('Id : '.$ini->id);
             $user = User::find($ini->user_id);
 
-            $url = 'https://staging.hlbit.trade/api/ticker/'.$ini->pair;
+            $url = env('API_DOMAIN_URL').'/api/ticker/'.$ini->pair;
             $ch = curl_init($url);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
             $req = curl_exec($ch);

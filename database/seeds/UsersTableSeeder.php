@@ -17,9 +17,9 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->insert([
             [
                 'id' => 1,
-                'email' => 'HLBIT-API-O3SQ-LB17-FGL8-ZO9H',
-                'secret'=> 'gjc07ug4qmy6hxqm4rktf78gqgiy9kiyniw4yyzjd1110w967c4xecs89rwu4wjc',
-                'password' => bcrypt('gjc07ug4qmy6hxqm4rktf78gqgiy9kiyniw4yyzjd1110w967c4xecs89rwu4wjc'),
+                'email' => env('HLBIT_API_KEY'),
+                'secret'=> env('HLBIT_SECRET_KEY'),
+                'password' => bcrypt(env('HLBIT_SECRET_KEY')),
                 'remember_token' => null,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),

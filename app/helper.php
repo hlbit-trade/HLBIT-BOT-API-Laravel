@@ -22,7 +22,7 @@ if(!function_exists('executeApi')){
             curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
 		'.php_uname('s').'; PHP/'.phpversion().')');
         }
-        curl_setopt($ch, CURLOPT_URL, 'https://staging.hlbit.trade/api/tapi/');
+        curl_setopt($ch, CURLOPT_URL, env('API_DOMAIN_URL').'/api/tapi/');
         curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
@@ -52,7 +52,7 @@ if(!function_exists('getLatestPrice')){
 
         $headers = [
             'Accepts: application/json',
-            'X-CMC_PRO_API_KEY: 081ca895-2faa-43e4-99e0-098c05a8e6dc'
+            'X-CMC_PRO_API_KEY: '.env('COINMARKETCAP_API_KEY')
         ];
         $qs = http_build_query($parameters); // query string encode the parameters
         $request = "{$url}?{$qs}"; // create the request URL

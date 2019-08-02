@@ -56,7 +56,7 @@ class HomeController extends Controller
         if(isset($_GET['pair'])){
             $market = $_GET['pair'];
         }
-        $url = 'https://staging.hlbit.trade/api/ticker/'.$market;
+        $url = env('API_DOMAIN_URL').'/api/ticker/'.$market;
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $req = curl_exec($ch);
@@ -163,7 +163,7 @@ class HomeController extends Controller
             curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
 		'.php_uname('s').'; PHP/'.phpversion().')');
         }
-        curl_setopt($ch, CURLOPT_URL, 'https://staging.hlbit.trade/api/tapi/');
+        curl_setopt($ch, CURLOPT_URL, env('API_DOMAIN_URL').'/api/tapi/');
         curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
