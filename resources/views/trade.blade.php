@@ -27,6 +27,7 @@
                                 <option value="btcusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'btcusd'? 'selected':'' }}>BTCUSD</option>
                                 <option value="ethusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'ethusd'? 'selected':'' }}>ETHUSD</option>
                                 <option value="bpinkusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'bpinkusd'? 'selected':'' }}>BPINKUSD</option>
+                                <option value="hlobeth" {{ isset($_GET['pair']) && $_GET['pair'] == 'hlobeth'? 'selected':'' }}>HLOBETH</option>
                             </select>
                         </form>
                         <script>
