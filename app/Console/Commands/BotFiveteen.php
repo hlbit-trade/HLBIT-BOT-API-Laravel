@@ -63,7 +63,7 @@ class BotFiveteen extends Command
                 $req = curl_exec($ch);
                 $data = json_decode($req, true);
                 $eth_price = getLatestPrice('eth');
-                $price = bcdiv('0.01',$eth_price,8);
+                $price = 0.01 / $eth_price;
                 $crypto = executeApi('getBalance',['type'=>'crypto'],$user);
                 if($crypto['status'] != 1){
                     $log = new LogActivity();
@@ -80,7 +80,7 @@ class BotFiveteen extends Command
                     [
                         'pair'=>$ini->pair,
                         'type'=>$ini->type,
-                        'price'=>$price,
+                        'price'=>round($price,8),
                         'amount'=>$crypto_balance
                     ],$user);
 
@@ -88,7 +88,7 @@ class BotFiveteen extends Command
                 $log->status = $exec['status'];
                 $log->message = $exec['status'] == 1 ? $exec['data']['message']:$exec['error'];
                 $log->save();
-                Log::info("pair ".$ini->pair." type ".$ini->type." price ".$price." amount ".$crypto_balance);
+                Log::info("pair ".$ini->pair." type ".$ini->type." price ".round($price,8)." amount ".$crypto_balance);
             } else {
                 Log::info('Id : '.$ini->id);
                 $user = User::find($ini->user_id);
