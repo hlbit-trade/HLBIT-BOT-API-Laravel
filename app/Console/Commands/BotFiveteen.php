@@ -80,7 +80,7 @@ class BotFiveteen extends Command
                     [
                         'pair'=>$ini->pair,
                         'type'=>$ini->type,
-                        'price'=>round($price,8),
+                        'price'=>$price,
                         'amount'=>$crypto_balance
                     ],$user);
 
