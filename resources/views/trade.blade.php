@@ -100,7 +100,7 @@
                                                         <div class="col-md-12">
                                                             <h5 class="text-center">Select your condition</h5>
 
-                                                            <input type="hidden" name="pair" value="btcusd">
+                                                            <input type="hidden" name="pair" value="hlobeth">
                                                             <label>Type</label>
                                                             <select name="type" class="form-control">
                                                                 <option value="buy">Buy</option>
