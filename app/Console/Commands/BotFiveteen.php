@@ -56,7 +56,7 @@ class BotFiveteen extends Command
                         $log->save();
                     }
                 }
-
+                Log::info("cancel ok");
                 $url = env('API_DOMAIN_URL').'/api/ticker/'.$ini->pair;
                 $ch = curl_init($url);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -72,7 +72,7 @@ class BotFiveteen extends Command
                     $log->save();
                 }
                 foreach ($crypto['data'] as $its){
-                    if($its['code'] == $data['ticker']['coin']){
+                    if($its['code'] == 'hlob'){
                         $crypto_balance = $its['balance'];
                     }
                 }
@@ -88,6 +88,7 @@ class BotFiveteen extends Command
                 $log->status = $exec['status'];
                 $log->message = $exec['status'] == 1 ? $exec['data']['message']:$exec['error'];
                 $log->save();
+                Log::info("add ok");
             } else {
                 Log::info('Id : '.$ini->id);
                 $user = User::find($ini->user_id);

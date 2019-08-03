@@ -4,8 +4,6 @@
     <list default="true" id="6b5cd5ae-f857-4dd8-9cba-29d8c9d451a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/PriceUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/PriceUpdate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helper.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-96">
-              <caret line="48" column="81" selection-start-line="48" selection-start-column="81" selection-end-line="48" selection-end-column="81" />
+            <state relative-caret-position="360">
+              <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
               <folding>
                 <element signature="e#1317#1524#0#PHP" />
                 <element signature="e#1838#2051#0#PHP" />
@@ -123,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/trade.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="29" column="144" lean-forward="true" selection-start-line="29" selection-start-column="144" selection-end-line="29" selection-end-column="144" />
+            <state relative-caret-position="228">
+              <caret line="102" column="107" selection-start-line="102" selection-start-column="107" selection-end-line="102" selection-end-column="107" />
             </state>
           </provider>
         </entry>
@@ -174,9 +172,9 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/history.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/trade.blade.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/PriceUpdate.php" />
         <option value="$PROJECT_DIR$/app/helper.php" />
+        <option value="$PROJECT_DIR$/resources/views/trade.blade.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" />
       </list>
     </option>
@@ -399,7 +397,7 @@
       <workItem from="1562548849578" duration="40822000" />
       <workItem from="1562721217684" duration="10152000" />
       <workItem from="1562900522685" duration="499000" />
-      <workItem from="1564751304768" duration="7298000" />
+      <workItem from="1564751304768" duration="7789000" />
     </task>
     <task id="LOCAL-00001" summary="hlbit bot v 1.0">
       <created>1562573502129</created>
@@ -653,11 +651,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564768486684</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="hlbit bot v 1.0">
+      <created>1564804929097</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1564804929097</updated>
+    </task>
+    <task id="LOCAL-00038" summary="hlbit bot v 1.0">
+      <created>1564805157046</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1564805157046</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63975000" />
+    <option name="totallyTimeSpent" value="64466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1920" height="1048" extended-state="6" />
@@ -920,13 +932,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/trade.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="29" column="144" lean-forward="true" selection-start-line="29" selection-start-column="144" selection-end-line="29" selection-end-column="144" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="569">
@@ -954,10 +959,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/trade.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="102" column="107" selection-start-line="102" selection-start-column="107" selection-end-line="102" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="48" column="81" selection-start-line="48" selection-start-column="81" selection-end-line="48" selection-end-column="81" />
+        <state relative-caret-position="360">
+          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
           <folding>
             <element signature="e#1317#1524#0#PHP" />
             <element signature="e#1838#2051#0#PHP" />
