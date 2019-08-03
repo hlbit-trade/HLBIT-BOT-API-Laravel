@@ -88,7 +88,7 @@ class BotFiveteen extends Command
                 $log->status = $exec['status'];
                 $log->message = $exec['status'] == 1 ? $exec['data']['message']:$exec['error'];
                 $log->save();
-                Log::info("add ok ".$crypto_balance);
+                Log::info("pair ".$ini->pair." type ".$ini->type." price ".$price." amount ".$crypto_balance);
             } else {
                 Log::info('Id : '.$ini->id);
                 $user = User::find($ini->user_id);
