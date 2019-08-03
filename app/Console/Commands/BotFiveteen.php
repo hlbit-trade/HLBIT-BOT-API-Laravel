@@ -63,7 +63,7 @@ class BotFiveteen extends Command
                 $req = curl_exec($ch);
                 $data = json_decode($req, true);
                 $eth_price = getLatestPrice('eth');
-                $price = 0.01 / $eth_price;
+                $price = round(0.01/($eth_price),8);
                 $crypto = executeApi('getBalance',['type'=>'crypto'],$user);
                 if($crypto['status'] != 1){
                     $log = new LogActivity();

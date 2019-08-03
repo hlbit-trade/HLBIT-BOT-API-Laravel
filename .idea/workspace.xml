@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b5cd5ae-f857-4dd8-9cba-29d8c9d451a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+            <state relative-caret-position="498">
+              <caret line="90" column="108" selection-start-line="90" selection-start-column="108" selection-end-line="90" selection-end-column="108" />
               <folding>
                 <element signature="e#1317#1524#0#PHP" />
                 <element signature="e#1838#2051#0#PHP" />
@@ -397,7 +396,7 @@
       <workItem from="1562548849578" duration="40822000" />
       <workItem from="1562721217684" duration="10152000" />
       <workItem from="1562900522685" duration="499000" />
-      <workItem from="1564751304768" duration="7789000" />
+      <workItem from="1564751304768" duration="8127000" />
     </task>
     <task id="LOCAL-00001" summary="hlbit bot v 1.0">
       <created>1562573502129</created>
@@ -665,11 +664,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564805157046</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="hlbit bot v 1.0">
+      <created>1564805493789</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1564805493789</updated>
+    </task>
+    <task id="LOCAL-00040" summary="hlbit bot v 1.0">
+      <created>1564805589419</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1564805589419</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64466000" />
+    <option name="totallyTimeSpent" value="64804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1920" height="1048" extended-state="6" />
@@ -968,8 +981,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+        <state relative-caret-position="498">
+          <caret line="90" column="108" selection-start-line="90" selection-start-column="108" selection-end-line="90" selection-end-column="108" />
           <folding>
             <element signature="e#1317#1524#0#PHP" />
             <element signature="e#1838#2051#0#PHP" />
