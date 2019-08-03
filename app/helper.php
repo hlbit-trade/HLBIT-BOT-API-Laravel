@@ -41,8 +41,8 @@ if(!function_exists('executeApi')){
     }
 }
 
-if(!function_exists('getLatestPrice')){
-    function getLatestPrice($code){
+if(!function_exists('getPrice')){
+    function getPrice($code){
         $url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest';
         $parameters = [
             'start' => '1',
@@ -69,5 +69,16 @@ if(!function_exists('getLatestPrice')){
         $response = curl_exec($curl); // Send the request, save the response
         $res = json_decode($response, true); // print json decoded response
         return $res['data'][0]['quote'][strtoupper($code)];
+    }
+}
+
+if(!function_exists('getLatestPrice')){
+    function getLatestPrice($code){
+        $rate = \App\Exchange::where('code','=',$code)->orderBy('id','desc')->first();
+        if(!is_null($rate)){
+            return $rate->rate;
+        } else {
+            return 0;
+        }
     }
 }

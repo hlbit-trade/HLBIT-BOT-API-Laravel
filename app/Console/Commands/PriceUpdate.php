@@ -39,8 +39,8 @@ class PriceUpdate extends Command
      */
     public function handle()
     {
-        $btc_price = getLatestPrice('usd');
-        $eth = getLatestPrice('eth');
+        $btc_price = getPrice('usd');
+        $eth = getPrice('eth');
         $eth_price = $btc_price['price'] / $eth['price'];
 
         $exchange = new Exchange();
