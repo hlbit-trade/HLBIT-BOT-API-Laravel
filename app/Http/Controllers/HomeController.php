@@ -87,15 +87,17 @@ class HomeController extends Controller
             return redirect('log');
         }
 
-        $btc_price = Exchange::where('code','=','btc')->orderBy('created_at','desc')->first();
-        $eth_price = Exchange::where('code','=','eth')->orderBy('created_at','desc')->first();
+        $btc_price = getLatestPrice('btc');
+        $eth_price = getLatestPrice('eth');
+        $xrp_price = getLatestPrice('xrp');
         return view('trade',[
             'data'=>$data['ticker'],
             'balance_fiat' => $fiat['data'],
             'balance_crypto' => $crypto['data'],
             'setting'=>Setting::where('status','<>',Setting::STATUS_DONE)->get(),
-            'btc_price'=>$btc_price->rate,
-            'eth_price'=>$eth_price->rate
+            'btc_price'=>$btc_price,
+            'eth_price'=>$eth_price,
+            'xrp_price'=>$xrp_price
         ]);
     }
 
