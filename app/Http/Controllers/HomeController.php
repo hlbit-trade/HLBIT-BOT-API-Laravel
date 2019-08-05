@@ -115,7 +115,6 @@ class HomeController extends Controller
           $market = $_GET['pair'];
         }
         $data = $this->execute('listOrder',['pair'=>$market]);
-        dd($data);
         if($data['status'] != 1){
             $log = new LogActivity();
             $log->status = $data['status'];

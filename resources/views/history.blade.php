@@ -44,6 +44,7 @@
                                 <th scope="col">Trade Type</th>
                                 <th scope="col">Price</th>
                                 <th scope="col">Amount</th>
+                                <th scope="col">Amount Pair</th>
                                 <th scope="col">Count Match</th>
                                 <th scope="col">Status</th>
                                 <th scope="col">Action</th>
@@ -56,7 +57,8 @@
                                 <th>{{ $ini['id'] }}</th>
                                 <td><span class="badge badge-{{ $ini['trade_type']=='buy'?'success':'danger' }}">{{ $ini['trade_type'] }}</span></td>
                                 <td>{{ $ini['price'] }}</td>
-                                <td>{{ $ini['estimation'] }}</td>
+                                <td>{{ $ini['base_amount'] }}</td>
+                                <td>{{ $ini['quote_amount'] }}</td>
                                 <td>{{ $ini['counted_match'] }}</td>
                                 <td>
                                     @if($ini['status'] == 'success')
