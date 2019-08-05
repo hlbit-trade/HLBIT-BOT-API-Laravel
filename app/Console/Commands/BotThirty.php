@@ -143,16 +143,14 @@ class BotThirty extends Command
 
             if($ini->globalprice > 0){
                 if($ini->pair == 'btcusd'){
-                    $btc = getLatestPrice('usd');
-                    $btc_price = $btc['price'];
-
-                    $price = $ini->globalprice / 100 * $btc_price;
+                    $btc = getLatestPrice('btc');
+                    $price = $ini->globalprice / 100 * $btc;
                 } elseif($ini->pair == 'ethusd'){
-                    $btc_price2 = getLatestPrice('usd');
                     $eth = getLatestPrice('eth');
-                    $eth_price = $btc_price2['price'] / $eth['price'];
-
-                    $price = $ini->globalprice / 100 * $eth_price;
+                    $price = $ini->globalprice / 100 * $eth;
+                } elseif($ini->pair == 'xrpusd'){
+                    $xrp = getLatestPrice('xrp');
+                    $price = $ini->globalprice / 100 * $xrp;
                 }
 
             }

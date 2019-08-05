@@ -41,7 +41,9 @@ class PriceUpdate extends Command
     {
         $btc_price = getPrice('usd');
         $eth = getPrice('eth');
+        $xrp = getPrice('xrp');
         $eth_price = $btc_price['price'] / $eth['price'];
+        $xrp_price = $btc_price['price'] / $xrp['price'];
 
         $exchange = new Exchange();
         $exchange->code = 'btc';
@@ -54,5 +56,11 @@ class PriceUpdate extends Command
         $exchange2->rate = $eth_price;
         $exchange2->save();
         Log::info('price eth updated to '.$eth_price);
+
+        $exchange3 = new Exchange();
+        $exchange3->code = 'xrp';
+        $exchange3->rate = $xrp_price;
+        $exchange3->save();
+        Log::info('price xrp updated to '.$xrp_price);
     }
 }

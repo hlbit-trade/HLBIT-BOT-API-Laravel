@@ -25,8 +25,8 @@
                             <label>Select Market</label>
                             <select class="form-control" name="pair" required onchange="submit()">
                                 <option value="btcusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'btcusd'? 'selected':'' }}>BTCUSD</option>
-                                {{--<option value="ethusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'ethusd'? 'selected':'' }}>ETHUSD</option>--}}
-                                {{--<option value="bpinkusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'bpinkusd'? 'selected':'' }}>BPINKUSD</option>--}}
+                                <option value="ethusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'ethusd'? 'selected':'' }}>ETHUSD</option>
+                                <option value="xrpusd" {{ isset($_GET['pair']) && $_GET['pair'] == 'xrpusd'? 'selected':'' }}>XRPUSD</option>
                                 <option value="hlobeth" {{ isset($_GET['pair']) && $_GET['pair'] == 'hlobeth'? 'selected':'' }}>HLOBETH</option>
                             </select>
                         </form>
@@ -100,7 +100,7 @@
                                                         <div class="col-md-12">
                                                             <h5 class="text-center">Select your condition</h5>
 
-                                                            <input type="hidden" name="pair" value="hlobeth">
+                                                            <input type="hidden" name="pair" value="{{ isset($_GET['pair'])? $_GET['pair']:'btcusd' }}">
                                                             <label>Type</label>
                                                             <select name="type" class="form-control">
                                                                 <option value="buy">Buy</option>
@@ -110,9 +110,9 @@
                                                             <label>Time Repeat</label>
                                                             <select name="repeat" class="form-control">
                                                                 <option value="0">No Repeat</option>
-                                                                <option value="1">1 Minutes</option>
-                                                                <option value="5">5 Minutes</option>
-                                                                <option value="10">10 Minutes</option>
+                                                                {{--<option value="1">1 Minutes</option>--}}
+                                                                {{--<option value="5">5 Minutes</option>--}}
+                                                                {{--<option value="10">10 Minutes</option>--}}
                                                                 <option value="15">15 Minutes</option>
                                                                 <option value="30">30 Minutes</option>
                                                                 <option value="60">60 Minutes</option>
