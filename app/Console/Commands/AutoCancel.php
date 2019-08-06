@@ -21,7 +21,7 @@ class AutoCancel extends Command
      *
      * @var string
      */
-    protected $description = 'Auto Cancel if order pending > 10';
+    protected $description = 'Auto Cancel if order pending > 8';
 
     /**
      * Create a new command instance.
@@ -50,7 +50,7 @@ class AutoCancel extends Command
                     $count_pending += 1;
                 }
             }
-            if($count_pending > 20){
+            if($count_pending > 16){
                 foreach ($list_order['data'] as $its){
                     if($its['status'] == 'pending'){
                         $cancel = executeApi('cancelOrder',['order_id'=>$its['id']],$user);
