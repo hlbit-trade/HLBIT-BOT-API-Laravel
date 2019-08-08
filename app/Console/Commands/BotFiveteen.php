@@ -70,7 +70,7 @@ class BotFiveteen extends Command
                         'pair'=>$ini->pair,
                         'type'=>$ini->type,
                         'price'=>$price,
-                        'amount'=>10000
+                        'amount'=>100000
                     ],$user);
 
                 $log = new LogActivity();
