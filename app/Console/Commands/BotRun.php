@@ -58,6 +58,11 @@ class BotRun extends Command
                 $log->message = $exec['status'] == 1 ? $exec['data']['message']:$exec['error'];
                 $log->save();
                 Log::info("pair ".$ini->pair." type ".$ini->type." price ".$ini->globalprice." amount 100000");
+                if ($ini->repeat == 0) {
+                    $set = Setting::find($ini->id);
+                    $set->status = Setting::STATUS_DONE;
+                    $set->save();
+                }
             } else {
                 Log::info('Id : ' . $ini->id);
                 $user = User::find($ini->user_id);
