@@ -57,6 +57,7 @@ class BotFiveteen extends Command
                     }
                 }
                 Log::info("cancel ok");
+
                 $url = env('API_DOMAIN_URL').'/api/ticker/'.$ini->pair;
                 $ch = curl_init($url);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -64,24 +65,12 @@ class BotFiveteen extends Command
                 $data = json_decode($req, true);
                 $eth_price = getLatestPrice('eth');
                 $price = bcdiv(0.01,$eth_price,8);
-                $crypto = executeApi('getBalance',['type'=>'crypto'],$user);
-                if($crypto['status'] != 1){
-                    $log = new LogActivity();
-                    $log->status = $crypto['status'];
-                    $log->message = $crypto['error'];
-                    $log->save();
-                }
-                foreach ($crypto['data'] as $its){
-                    if($its['code'] == 'hlob'){
-                        $crypto_balance = $its['balance'];
-                    }
-                }
                 $exec = executeApi('trade',
                     [
                         'pair'=>$ini->pair,
                         'type'=>$ini->type,
                         'price'=>$price,
-                        'amount'=>$crypto_balance
+                        'amount'=>10000
                     ],$user);
 
                 $log = new LogActivity();
