@@ -4,6 +4,7 @@
     <list default="true" id="6b5cd5ae-f857-4dd8-9cba-29d8c9d451a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotRun.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotRun.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,15 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/history.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/log.blade.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,11 +35,31 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
+            <state relative-caret-position="194">
+              <caret line="182" column="33" selection-start-line="182" selection-start-column="33" selection-end-line="182" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotRun.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="581">
+              <caret line="59" column="92" selection-start-line="59" selection-start-column="92" selection-end-line="59" selection-end-column="92" />
+              <folding>
+                <element signature="e#40#60#0#PHP" expanded="true" />
+                <element signature="e#1225#1432#0#PHP" />
+                <element signature="e#1746#1959#0#PHP" />
+                <element signature="e#1972#2154#0#PHP" />
+                <element signature="e#2237#2444#0#PHP" />
+                <element signature="e#2457#2635#0#PHP" />
+                <element signature="e#2851#3641#0#PHP" />
+                <element signature="e#3656#4436#0#PHP" />
+                <element signature="e#4458#4675#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,7 +156,6 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/BotFive.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/BotOne.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/BotRun.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/BotTen.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
@@ -158,6 +169,7 @@
         <option value="$PROJECT_DIR$/resources/views/trade.blade.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/AutoCancel.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/BotRun.php" />
       </list>
     </option>
   </component>
@@ -363,21 +375,7 @@
       <workItem from="1564751304768" duration="10467000" />
       <workItem from="1564967576241" duration="3221000" />
       <workItem from="1565060256182" duration="680000" />
-      <workItem from="1565231219713" duration="257000" />
-    </task>
-    <task id="LOCAL-00004" summary="hlbit bot v 1.0">
-      <created>1562574424747</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1562574424747</updated>
-    </task>
-    <task id="LOCAL-00005" summary="hlbit bot v 1.0">
-      <created>1562574572245</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1562574572245</updated>
+      <workItem from="1565231219713" duration="3268000" />
     </task>
     <task id="LOCAL-00006" summary="hlbit bot v 1.0">
       <created>1562574801230</created>
@@ -708,11 +706,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565060297653</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="hlbit bot v 1.0">
+      <created>1565231485258</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1565231485258</updated>
+    </task>
+    <task id="LOCAL-00054" summary="hlbit bot v 1.0">
+      <created>1565232455617</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1565232455617</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71302000" />
+    <option name="totallyTimeSpent" value="74313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1920" height="1048" extended-state="6" />
@@ -909,16 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotRun.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-864">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="67" />
-          <folding>
-            <element signature="e#40#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="622">
@@ -1015,8 +1017,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
+        <state relative-caret-position="194">
+          <caret line="182" column="33" selection-start-line="182" selection-start-column="33" selection-end-line="182" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotRun.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="59" column="92" selection-start-line="59" selection-start-column="92" selection-end-line="59" selection-end-column="92" />
+          <folding>
+            <element signature="e#40#60#0#PHP" expanded="true" />
+            <element signature="e#1225#1432#0#PHP" />
+            <element signature="e#1746#1959#0#PHP" />
+            <element signature="e#1972#2154#0#PHP" />
+            <element signature="e#2237#2444#0#PHP" />
+            <element signature="e#2457#2635#0#PHP" />
+            <element signature="e#2851#3641#0#PHP" />
+            <element signature="e#3656#4436#0#PHP" />
+            <element signature="e#4458#4675#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
