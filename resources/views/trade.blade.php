@@ -123,7 +123,7 @@
                                                                 <option value="60">60 Minutes</option>
                                                             </select>
 
-                                                            <label>Amount in</label>
+                                                            <label>Amount in Crypto</label>
                                                             <input type="number" name="amount" step="any" class="form-control" required>
                                                             {{--<select name="amount" class="form-control" required>--}}
                                                                 {{--<option value="1">1% Balance</option>--}}
