@@ -24,6 +24,15 @@ class UsersTableSeeder extends Seeder
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s'),
             ],
+            [
+                'id' => 2,
+                'email' => env('HLBIT_API_KEY_2'),
+                'secret'=> env('HLBIT_SECRET_KEY_2'),
+                'password' => bcrypt(env('HLBIT_SECRET_KEY_2')),
+                'remember_token' => null,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
+            ],
         ]);
     }
 }
