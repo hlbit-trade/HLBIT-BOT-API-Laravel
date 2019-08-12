@@ -124,7 +124,7 @@
                                                             </select>
 
                                                             <label>Amount in</label>
-                                                            <input type="number" step="any" class="form-control" required>
+                                                            <input type="number" name="amount" step="any" class="form-control" required>
                                                             {{--<select name="amount" class="form-control" required>--}}
                                                                 {{--<option value="1">1% Balance</option>--}}
                                                                 {{--<option value="2">2% Balance</option>--}}
