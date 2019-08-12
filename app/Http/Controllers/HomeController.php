@@ -6,6 +6,7 @@ use App\Exchange;
 use App\LogActivity;
 use App\Setting;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -94,7 +95,7 @@ class HomeController extends Controller
             'data'=>$data['ticker'],
             'balance_fiat' => $fiat['data'],
             'balance_crypto' => $crypto['data'],
-            'setting'=>Setting::where('status','<>',Setting::STATUS_DONE)->get(),
+            'setting'=>Setting::where('status','<>',Setting::STATUS_DONE)->where('user_id',Auth::user()->id)->get(),
             'btc_price'=>$btc_price,
             'eth_price'=>$eth_price,
             'xrp_price'=>$xrp_price
