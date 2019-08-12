@@ -126,11 +126,6 @@ class BotFiveteen extends Command
                     }
                 }
 
-                if($ini->type == 'sell'){
-                    $amount += $ini->amount * $crypto_balance / 100;
-                } else {
-                    $amount += $ini->amount * $fiat_balance / 100;
-                }
 
                 if($ini->type_price != 'none'){
                     if($ini->type_price == 'same'){
@@ -188,7 +183,11 @@ class BotFiveteen extends Command
                         $xrp = getLatestPrice('xrp');
                         $price = $ini->globalprice / 100 * $xrp;
                     }
-
+                }
+                if($ini->type == 'sell'){
+                    $amount += $ini->amount;
+                } else {
+                    $amount += $ini->amount * $price;
                 }
 
                 $exec = executeApi('trade',
