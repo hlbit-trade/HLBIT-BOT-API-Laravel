@@ -202,7 +202,7 @@
                                             </td>
                                             <td>{{ $ini->type_24hr }} {{ $ini->value_24hr }} %</td>
                                             <td>{{ $ini->type_price }} {{ $ini->value_price }}</td>
-                                            <td>{{ $ini->amount }} % of Balance</td>
+                                            <td>{{ $ini->amount }}</td>
                                             <td>{{ $ini->globalprice }} % of Global Price</td>
                                             <td>
                                                 @if($ini->status == 1)
