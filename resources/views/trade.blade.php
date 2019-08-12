@@ -123,15 +123,16 @@
                                                                 <option value="60">60 Minutes</option>
                                                             </select>
 
-                                                            <label>Amount</label>
-                                                            <select name="amount" class="form-control" required>
-                                                                <option value="1">1% Balance</option>
-                                                                <option value="2">2% Balance</option>
-                                                                <option value="5">5% Balance</option>
-                                                                <option value="10">10% Balance</option>
-                                                                <option value="50">50% Balance</option>
-                                                                <option value="100">100% Balance</option>
-                                                            </select>
+                                                            <label>Amount in</label>
+                                                            <input type="number" step="any" class="form-control" required>
+                                                            {{--<select name="amount" class="form-control" required>--}}
+                                                                {{--<option value="1">1% Balance</option>--}}
+                                                                {{--<option value="2">2% Balance</option>--}}
+                                                                {{--<option value="5">5% Balance</option>--}}
+                                                                {{--<option value="10">10% Balance</option>--}}
+                                                                {{--<option value="50">50% Balance</option>--}}
+                                                                {{--<option value="100">100% Balance</option>--}}
+                                                            {{--</select>--}}
 
                                                             <label>Where 24Hr</label>
                                                             <div class="row" style="margin-left: 1px; margin-right: 1px">
