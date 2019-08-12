@@ -22,7 +22,7 @@ class CreateSettingTable extends Migration
             $table->float('value_24hr',20,8);
             $table->string('type_price');
             $table->float('value_price',20,8);
-            $table->integer('amount');
+            $table->float('amount',20,8);
             $table->integer('status')->default(1);
             $table->integer('user_id');
             $table->timestamps();
