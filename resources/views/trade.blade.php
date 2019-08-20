@@ -175,6 +175,92 @@
 
                                     </div>
                                 </div>
+                                <div id="myModal-edit" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Edit Condition</h5>
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <form action="{{ route('setting.update') }}" method="POST">
+                                                @csrf
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <h5 class="text-center">Select your condition</h5>
+                                                            <input type="hidden" id="data-id" name="id" value="">
+                                                            <input type="hidden" name="pair" value="{{ isset($_GET['pair'])? $_GET['pair']:'btcusd' }}">
+                                                            <label>Type</label>
+                                                            <select name="type" class="form-control">
+                                                                <option value="buy">Buy</option>
+                                                                <option value="sell">Sell</option>
+                                                            </select>
+
+                                                            <label>Time Repeat</label>
+                                                            <select name="repeat" class="form-control">
+                                                                <option value="0">No Repeat</option>
+                                                                {{--<option value="1">1 Minutes</option>--}}
+                                                                {{--<option value="5">5 Minutes</option>--}}
+                                                                {{--<option value="10">10 Minutes</option>--}}
+                                                                <option value="15">15 Minutes</option>
+                                                                <option value="30">30 Minutes</option>
+                                                                <option value="60">60 Minutes</option>
+                                                            </select>
+
+                                                            <label>Amount in Crypto</label>
+                                                            <input id="data-amount" type="number" name="amount" step="any" class="form-control" required>
+                                                            {{--<select name="amount" class="form-control" required>--}}
+                                                            {{--<option value="1">1% Balance</option>--}}
+                                                            {{--<option value="2">2% Balance</option>--}}
+                                                            {{--<option value="5">5% Balance</option>--}}
+                                                            {{--<option value="10">10% Balance</option>--}}
+                                                            {{--<option value="50">50% Balance</option>--}}
+                                                            {{--<option value="100">100% Balance</option>--}}
+                                                            {{--</select>--}}
+
+                                                            <label>Where 24Hr</label>
+                                                            <div class="row" style="margin-left: 1px; margin-right: 1px">
+                                                                <select name="type_24hr" class="form-control col-3" required>
+                                                                    <option value="none">None</option>
+                                                                    <option value="more">More Than</option>
+                                                                    <option value="same">Exactly</option>
+                                                                    <option value="less">Less Than</option>
+                                                                </select>
+                                                                <input type="number" class="form-control col-9" step="any" name="value_24hr" placeholder="Enter 24Hr" required>
+                                                            </div>
+
+                                                            <label>On Last Price</label>
+                                                            <div class="row" style="margin-left: 1px; margin-right: 1px">
+                                                                <select name="type_price" class="form-control col-3" required>
+                                                                    <option value="none">None</option>
+                                                                    <option value="more">More Than</option>
+                                                                    <option value="same">Exactly</option>
+                                                                    <option value="less">Less Than</option>
+                                                                </select>
+                                                                <input type="number" class="form-control col-9" step="any" name="value_price" placeholder="Enter Price" required>
+                                                            </div>
+
+                                                            <label>Price</label>
+                                                            <div class="row" style="margin-left: 1px; margin-right: 1px">
+                                                                <select class="form-control col-6" required>
+                                                                    <option selected>% of Global Price</option>
+                                                                </select>
+                                                                <input type="number" class="form-control col-6" step="any" name="globalprice" placeholder="Amount % of Global Price" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn btn-primary">Save</button>
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
                                 <table class="table">
                                     <thead>
                                     <tr>
@@ -225,6 +311,7 @@
                                                         @csrf
                                                         <button type="submit" class="btn btn-sm btn-success">enable</button>
                                                     </form>
+                                                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" onclick="setId('{{ $ini->id }}','{{ $ini->amount }}')" data-target="#myModal-edit">edit</button>
                                                     <form action="{{ route('delete',$ini->id) }}" method="POST">
                                                         @csrf
                                                         <button type="submit" class="btn btn-sm btn-danger">delete</button>
@@ -235,6 +322,12 @@
                                         @endforeach
                                     </tbody>
                                 </table>
+                                <script>
+                                    function setId($id,$amount) {
+                                        document.getElementById('data-id').value = $id;
+                                        document.getElementById('data-amount').value = $amount;
+                                    }
+                                </script>
                             </div>
                         </div>
                     </div>
