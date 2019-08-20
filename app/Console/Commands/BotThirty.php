@@ -43,136 +43,173 @@ class BotThirty extends Command
     {
         $setting = Setting::where('repeat','=',30)->where('status','=',Setting::STATUS_ACTIVE)->get();
         foreach ($setting as $ini){
-            Log::info('Id : '.$ini->id);
-            $user = User::find($ini->user_id);
+            if($ini->pair == 'hlobeth'){
+                $user = User::find($ini->user_id);
 
-            $url = env('API_DOMAIN_URL').'/api/ticker/'.$ini->pair;
-            $ch = curl_init($url);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            $req = curl_exec($ch);
-            $data = json_decode($req, true);
-            if($data['status'] != 1){
-                $log = new LogActivity();
-                $log->status = $data['status'];
-                $log->message = $data['error'];
-                $log->save();
-            }
-            $value_24hr = $data['ticker']['last_24h_change'];
-            $value_price = $data['ticker']['last'];
-            $crypto_balance = 0;
-            $fiat_balance = 0;
-            $amount = 0;
-            $price = 0;
-
-            $crypto = executeApi('getBalance',['type'=>'crypto'],$user);
-            if($crypto['status'] != 1){
-                $log = new LogActivity();
-                $log->status = $crypto['status'];
-                $log->message = $crypto['error'];
-                $log->save();
-            }
-            foreach ($crypto['data'] as $its){
-                if($its['code'] == $data['ticker']['coin']){
-                    $crypto_balance = $its['balance'];
+                $list_order = executeApi('listOrder',['pair'=>$ini->pair],$user);
+                foreach ($list_order['data'] as $its){
+                    if($its['status'] == 'pending'){
+                        $cancel = executeApi('cancelOrder',['order_id'=>$its['id']],$user);
+                        $log = new LogActivity();
+                        $log->status = $cancel['status'];
+                        $log->message = $cancel['status'] == 1 ? $cancel['data']['message']:$cancel['error'];
+                        $log->save();
+                    }
                 }
-            }
+                Log::info("cancel ok");
 
-            $fiat = executeApi('getBalance',['type'=>'fiat'],$user);
-            if($fiat['status'] != 1){
+                $url = env('API_DOMAIN_URL').'/api/ticker/'.$ini->pair;
+                $ch = curl_init($url);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                $req = curl_exec($ch);
+                $data = json_decode($req, true);
+                $eth_price = getLatestPrice('eth');
+                $price = bcdiv(0.01,$eth_price,8);
+                $exec = executeApi('trade',
+                    [
+                        'pair'=>$ini->pair,
+                        'type'=>$ini->type,
+                        'price'=>$price,
+                        'amount'=>100000
+                    ],$user);
+
                 $log = new LogActivity();
-                $log->status = $fiat['status'];
-                $log->message = $fiat['error'];
+                $log->status = $exec['status'];
+                $log->message = $exec['status'] == 1 ? $exec['data']['message']:$exec['error'];
                 $log->save();
-            }
-            foreach ($fiat['data'] as $its){
-                if($its['code'] == $data['ticker']['pair']){
-                    $fiat_balance = $its['balance'];
-                }
-            }
-
-            if($ini->type == 'sell'){
-                $amount += $ini->amount * $crypto_balance / 100;
+                Log::info("pair ".$ini->pair." type ".$ini->type." price ".$price." amount 100000");
             } else {
-                $amount += $ini->amount * $fiat_balance / 100;
-            }
+                Log::info('Id : '.$ini->id);
+                $user = User::find($ini->user_id);
 
-            if($ini->type_price != 'none'){
-                if($ini->type_price == 'same'){
-                    if($ini->value_price == $value_price){
-                        $price = $value_price;
-                    } else {
-                        continue;
+                $url = env('API_DOMAIN_URL').'/api/ticker/'.$ini->pair;
+                $ch = curl_init($url);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                $req = curl_exec($ch);
+                $data = json_decode($req, true);
+                if($data['status'] != 1){
+                    $log = new LogActivity();
+                    $log->status = $data['status'];
+                    $log->message = $data['error'];
+                    $log->save();
+                }
+                $value_24hr = $data['ticker']['last_24h_change'];
+                $value_price = $data['ticker']['last'];
+                $crypto_balance = 0;
+                $fiat_balance = 0;
+                $amount = 0;
+                $price = 0;
+
+                $crypto = executeApi('getBalance',['type'=>'crypto'],$user);
+                if($crypto['status'] != 1){
+                    $log = new LogActivity();
+                    $log->status = $crypto['status'];
+                    $log->message = $crypto['error'];
+                    $log->save();
+                }
+                foreach ($crypto['data'] as $its){
+                    if($its['code'] == $data['ticker']['coin']){
+                        $crypto_balance = $its['balance'];
                     }
-                } elseif($ini->type_price == 'more'){
-                    if($ini->value_price < $value_price){
-                        $price = $value_price;
-                    } else {
-                        continue;
+                }
+
+                $fiat = executeApi('getBalance',['type'=>'fiat'],$user);
+                if($fiat['status'] != 1){
+                    $log = new LogActivity();
+                    $log->status = $fiat['status'];
+                    $log->message = $fiat['error'];
+                    $log->save();
+                }
+                foreach ($fiat['data'] as $its){
+                    if($its['code'] == $data['ticker']['pair']){
+                        $fiat_balance = $its['balance'];
                     }
-                } elseif($ini->type_price == 'less'){
-                    if($ini->value_price > $value_price){
-                        $price = $value_price;
-                    } else {
-                        continue;
+                }
+
+
+                if($ini->type_price != 'none'){
+                    if($ini->type_price == 'same'){
+                        if($ini->value_price == $value_price){
+                            $price = $value_price;
+                        } else {
+                            continue;
+                        }
+                    } elseif($ini->type_price == 'more'){
+                        if($ini->value_price < $value_price){
+                            $price = $value_price;
+                        } else {
+                            continue;
+                        }
+                    } elseif($ini->type_price == 'less'){
+                        if($ini->value_price > $value_price){
+                            $price = $value_price;
+                        } else {
+                            continue;
+                        }
                     }
+                }
+
+
+                if($ini->type_24hr != 'none'){
+                    if($ini->type_24hr == 'same'){
+                        if($ini->value_24hr == $value_24hr){
+                            $price = $value_price;
+                        } else {
+                            continue;
+                        }
+                    } elseif($ini->type_24hr == 'more'){
+                        if($ini->value_24hr < $value_24hr){
+                            $price = $value_price;
+                        } else {
+                            continue;
+                        }
+                    } elseif($ini->type_24hr == 'less'){
+                        if($ini->value_24hr > $value_24hr){
+                            $price = $value_price;
+                        } else {
+                            continue;
+                        }
+                    }
+                }
+
+                if($ini->globalprice > 0){
+                    if($ini->pair == 'btcusd'){
+                        $btc = getLatestPrice('btc');
+                        $price = $ini->globalprice / 100 * $btc;
+                    } elseif($ini->pair == 'ethusd'){
+                        $eth = getLatestPrice('eth');
+                        $price = $ini->globalprice / 100 * $eth;
+                    } elseif($ini->pair == 'xrpusd'){
+                        $xrp = getLatestPrice('xrp');
+                        $price = $ini->globalprice / 100 * $xrp;
+                    }
+                }
+                if($ini->type == 'sell'){
+                    $amount += $ini->amount;
+                } else {
+                    $amount += $ini->amount * $price;
+                }
+
+                $exec = executeApi('trade',
+                    [
+                        'pair'=>$ini->pair,
+                        'type'=>$ini->type,
+                        'price'=>$price,
+                        'amount'=>$amount
+                    ],$user);
+
+                $log = new LogActivity();
+                $log->status = $exec['status'];
+                $log->message = $exec['status'] == 1 ? $exec['data']['message']:$exec['error'];
+                $log->save();
+                Log::info('pair : '.$ini->pair.' | type : '.$ini->type.' | price : '.$price.' | amount : '.$amount.' | crypto_balance : '.$crypto_balance.' | fiat_balance : '.$fiat_balance);
+                if($ini->repeat == 0){
+                    $set = Setting::find($ini->id);
+                    $set->status = Setting::STATUS_DONE;
+                    $set->save();
                 }
             }
 
-
-            if($ini->type_24hr != 'none'){
-                if($ini->type_24hr == 'same'){
-                    if($ini->value_24hr == $value_24hr){
-                        $price = $value_price;
-                    } else {
-                        continue;
-                    }
-                } elseif($ini->type_24hr == 'more'){
-                    if($ini->value_24hr < $value_24hr){
-                        $price = $value_price;
-                    } else {
-                        continue;
-                    }
-                } elseif($ini->type_24hr == 'less'){
-                    if($ini->value_24hr > $value_24hr){
-                        $price = $value_price;
-                    } else {
-                        continue;
-                    }
-                }
-            }
-
-            if($ini->globalprice > 0){
-                if($ini->pair == 'btcusd'){
-                    $btc = getLatestPrice('btc');
-                    $price = $ini->globalprice / 100 * $btc;
-                } elseif($ini->pair == 'ethusd'){
-                    $eth = getLatestPrice('eth');
-                    $price = $ini->globalprice / 100 * $eth;
-                } elseif($ini->pair == 'xrpusd'){
-                    $xrp = getLatestPrice('xrp');
-                    $price = $ini->globalprice / 100 * $xrp;
-                }
-
-            }
-
-            $exec = executeApi('trade',
-                [
-                    'pair'=>$ini->pair,
-                    'type'=>$ini->type,
-                    'price'=>$price,
-                    'amount'=>$amount
-                ],$user);
-
-            $log = new LogActivity();
-            $log->status = $exec['status'];
-            $log->message = $exec['status'] == 1 ? $exec['data']['message']:$exec['error'];
-            $log->save();
-            Log::info('pair : '.$ini->pair.' | type : '.$ini->type.' | price : '.$price.' | amount : '.$amount.' | crypto_balance : '.$crypto_balance.' | fiat_balance : '.$fiat_balance);
-            if($ini->repeat == 0){
-                $set = Setting::find($ini->id);
-                $set->status = Setting::STATUS_DONE;
-                $set->save();
-            }
         }
     }
 }
