@@ -142,7 +142,7 @@
                                                                     <option value="same">Exactly</option>
                                                                     <option value="less">Less Than</option>
                                                                 </select>
-                                                                <input type="number" class="form-control col-9" step="any" name="value_24hr" placeholder="Enter 24Hr" required>
+                                                                <input type="number" class="form-control col-9" step="any" name="value_24hr" value="0" placeholder="Enter 24Hr" required>
                                                             </div>
 
                                                             <label>On Last Price</label>
@@ -153,7 +153,7 @@
                                                                     <option value="same">Exactly</option>
                                                                     <option value="less">Less Than</option>
                                                                 </select>
-                                                                <input type="number" class="form-control col-9" step="any" name="value_price" placeholder="Enter Price" required>
+                                                                <input type="number" class="form-control col-9" step="any" name="value_price" value="0" placeholder="Enter Price" required>
                                                             </div>
 
                                                             <label>Price</label>
@@ -191,7 +191,7 @@
                                                         <div class="col-md-12">
                                                             <h5 class="text-center">Select your condition</h5>
                                                             <input type="hidden" id="data-id" name="id" value="">
-                                                            <input type="hidden" name="pair" value="{{ isset($_GET['pair'])? $_GET['pair']:'btcusd' }}">
+                                                            <input type="hidden" id="data-pair" name="pair" value="{{ isset($_GET['pair'])? $_GET['pair']:'btcusd' }}">
                                                             <label>Type</label>
                                                             <select name="type" class="form-control">
                                                                 <option value="buy">Buy</option>
@@ -220,34 +220,12 @@
                                                             {{--<option value="100">100% Balance</option>--}}
                                                             {{--</select>--}}
 
-                                                            <label>Where 24Hr</label>
-                                                            <div class="row" style="margin-left: 1px; margin-right: 1px">
-                                                                <select name="type_24hr" class="form-control col-3" required>
-                                                                    <option value="none">None</option>
-                                                                    <option value="more">More Than</option>
-                                                                    <option value="same">Exactly</option>
-                                                                    <option value="less">Less Than</option>
-                                                                </select>
-                                                                <input type="number" class="form-control col-9" step="any" name="value_24hr" placeholder="Enter 24Hr" required>
-                                                            </div>
-
-                                                            <label>On Last Price</label>
-                                                            <div class="row" style="margin-left: 1px; margin-right: 1px">
-                                                                <select name="type_price" class="form-control col-3" required>
-                                                                    <option value="none">None</option>
-                                                                    <option value="more">More Than</option>
-                                                                    <option value="same">Exactly</option>
-                                                                    <option value="less">Less Than</option>
-                                                                </select>
-                                                                <input type="number" class="form-control col-9" step="any" name="value_price" placeholder="Enter Price" required>
-                                                            </div>
-
                                                             <label>Price</label>
                                                             <div class="row" style="margin-left: 1px; margin-right: 1px">
                                                                 <select class="form-control col-6" required>
                                                                     <option selected>% of Global Price</option>
                                                                 </select>
-                                                                <input type="number" class="form-control col-6" step="any" name="globalprice" placeholder="Amount % of Global Price" required>
+                                                                <input type="number" id="data-globalprice" class="form-control col-6" step="any" name="globalprice" placeholder="Amount % of Global Price" required>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -311,7 +289,7 @@
                                                         @csrf
                                                         <button type="submit" class="btn btn-sm btn-success">enable</button>
                                                     </form>
-                                                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" onclick="setId('{{ $ini->id }}','{{ $ini->amount }}')" data-target="#myModal-edit">edit</button>
+                                                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" onclick="setId('{{ $ini->id }}','{{ $ini->amount }}','{{ $ini->pair }}','{{ $ini->globalprice }}')" data-target="#myModal-edit">edit</button>
                                                     <form action="{{ route('delete',$ini->id) }}" method="POST">
                                                         @csrf
                                                         <button type="submit" class="btn btn-sm btn-danger">delete</button>
@@ -323,9 +301,11 @@
                                     </tbody>
                                 </table>
                                 <script>
-                                    function setId($id,$amount) {
+                                    function setId($id,$amount,$pair,$globalprice) {
                                         document.getElementById('data-id').value = $id;
                                         document.getElementById('data-amount').value = $amount;
+                                        document.getElementById('data-globalprice').value = $globalprice;
+                                        document.getElementById('data-pair').value = $pair;
                                     }
                                 </script>
                             </div>

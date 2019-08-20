@@ -111,10 +111,12 @@ class HomeController extends Controller
     }
 
     public function settingUpdate(Request $request){
-        dd($request->all());
         $data = Setting::find($request->id);
-        $request['user_id'] = auth()->user()->id;
-        $data->create($request->all());
+        $data->type = $request->type;
+        $data->repeat = $request->repeat;
+        $data->amount = $request->amount;
+        $data->globalprice = $request->globalprice;
+        $data->save();
 
         return redirect('/trade');
     }
