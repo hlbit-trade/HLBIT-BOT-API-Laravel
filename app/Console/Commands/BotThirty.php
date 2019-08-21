@@ -209,19 +209,19 @@ class BotThirty extends Command
                     $set->save();
                 }
 
-                //================================ Cancel if any remaining order
-
-                $list_order = executeApi('listOrder',['pair'=>$ini->pair],$user);
-                foreach ($list_order['data'] as $its){
-                    if($its['status'] == 'pending'){
-                        $cancel = executeApi('cancelOrder',['order_id'=>$its['id']],$user);
-                        $log = new LogActivity();
-                        $log->status = $cancel['status'];
-                        $log->message = $cancel['status'] == 1 ? $ini->pair.' : '.$cancel['data']['message']:$ini->pair.' : '.$cancel['error'];
-                        $log->save();
-                    }
-                }
-                Log::info("cancel ok");
+//                //================================ Cancel if any remaining order
+//
+//                $list_order = executeApi('listOrder',['pair'=>$ini->pair],$user);
+//                foreach ($list_order['data'] as $its){
+//                    if($its['status'] == 'pending'){
+//                        $cancel = executeApi('cancelOrder',['order_id'=>$its['id']],$user);
+//                        $log = new LogActivity();
+//                        $log->status = $cancel['status'];
+//                        $log->message = $cancel['status'] == 1 ? $ini->pair.' : '.$cancel['data']['message']:$ini->pair.' : '.$cancel['error'];
+//                        $log->save();
+//                    }
+//                }
+//                Log::info("cancel ok");
             }
 
         }
