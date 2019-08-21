@@ -200,7 +200,7 @@ class BotThirty extends Command
 
                 $log = new LogActivity();
                 $log->status = $exec['status'];
-                $log->message = $exec['status'] == 1 ? $exec['data']['message']:$exec['error'];
+                $log->message = $exec['status'] == 1 ? $ini->pair.' : '.$exec['data']['message']:$ini->pair.' : '.$exec['error'];
                 $log->save();
                 Log::info('pair : '.$ini->pair.' | type : '.$ini->type.' | price : '.$price.' | amount : '.$amount.' | crypto_balance : '.$crypto_balance.' | fiat_balance : '.$fiat_balance);
                 if($ini->repeat == 0){
@@ -208,6 +208,20 @@ class BotThirty extends Command
                     $set->status = Setting::STATUS_DONE;
                     $set->save();
                 }
+
+                //================================ Cancel if any remaining order
+
+                $list_order = executeApi('listOrder',['pair'=>$ini->pair],$user);
+                foreach ($list_order['data'] as $its){
+                    if($its['status'] == 'pending'){
+                        $cancel = executeApi('cancelOrder',['order_id'=>$its['id']],$user);
+                        $log = new LogActivity();
+                        $log->status = $cancel['status'];
+                        $log->message = $cancel['status'] == 1 ? $ini->pair.' : '.$cancel['data']['message']:$ini->pair.' : '.$cancel['error'];
+                        $log->save();
+                    }
+                }
+                Log::info("cancel ok");
             }
 
         }

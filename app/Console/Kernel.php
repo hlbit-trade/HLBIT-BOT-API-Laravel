@@ -24,6 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        $schedule->command('price:update')->everyFifteenMinutes();
         $schedule->command('bot:run')->everyMinute();
 
         $schedule->command('bot:one')->everyMinute();
@@ -33,7 +34,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('bot:thirty')->everyThirtyMinutes();
         $schedule->command('bot:sixty')->hourly();
 
-        $schedule->command('price:update')->everyFifteenMinutes();
+
         $schedule->command('auto:cancel')->everyMinute();
     }
 
