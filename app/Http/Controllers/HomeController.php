@@ -109,10 +109,12 @@ class HomeController extends Controller
         return redirect('/trade');
     }
     public function settingUpdate(Request $request){
-        dd($request->all());
-        $data = new Setting();
-        $request['user_id'] = auth()->user()->id;
-        $data->create($request->all());
+        $data = Setting::find($request->id);
+        $data->type = $request->type;
+        $data->repeat = $request->repeat;
+        $data->amount = $request->amount;
+        $data->globalprice = $request->globalprice;
+        $data->save();
 
         return redirect('/trade');
     }

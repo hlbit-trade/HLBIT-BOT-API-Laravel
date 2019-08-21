@@ -189,7 +189,7 @@
                                                     <div class="row">
                                                         <div class="col-md-12">
                                                             <h5 class="text-center">Select your condition</h5>
-                                                            <input type="hidden" id="data-id" value="">
+                                                            <input type="hidden" name="id" id="data-id" value="">
                                                             <input type="hidden" id="data-pair" name="pair" value="{{ isset($_GET['pair'])? $_GET['pair']:'btcusd' }}">
                                                             <label>Type</label>
                                                             <select name="type" class="form-control">
@@ -217,28 +217,6 @@
                                                                 <option value="50">50% Balance</option>
                                                                 <option value="100">100% Balance</option>
                                                             </select>
-
-                                                            <label>Where 24Hr</label>
-                                                            <div class="row" style="margin-left: 1px; margin-right: 1px">
-                                                                <select name="type_24hr" class="form-control col-3" required>
-                                                                    <option value="none">None</option>
-                                                                    <option value="more">More Than</option>
-                                                                    <option value="same">Exactly</option>
-                                                                    <option value="less">Less Than</option>
-                                                                </select>
-                                                                <input type="number" class="form-control col-9" step="any" value="0" name="value_24hr" placeholder="Enter 24Hr" required>
-                                                            </div>
-
-                                                            <label>On Last Price</label>
-                                                            <div class="row" style="margin-left: 1px; margin-right: 1px">
-                                                                <select name="type_price" class="form-control col-3" required>
-                                                                    <option value="none">None</option>
-                                                                    <option value="more">More Than</option>
-                                                                    <option value="same">Exactly</option>
-                                                                    <option value="less">Less Than</option>
-                                                                </select>
-                                                                <input type="number" class="form-control col-9" step="any" value="0" name="value_price" placeholder="Enter Price" required>
-                                                            </div>
 
                                                             <label>Price</label>
                                                             <div class="row" style="margin-left: 1px; margin-right: 1px">
