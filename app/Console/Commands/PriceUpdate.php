@@ -47,19 +47,19 @@ class PriceUpdate extends Command
 
         $exchange = new Exchange();
         $exchange->code = 'btc';
-        $exchange->rate = $btc_price['price'];
+        $exchange->rate = number_format($btc_price['price'],6);
         $exchange->save();
         Log::info('price btc updated to '.$btc_price['price']);
 
         $exchange2 = new Exchange();
         $exchange2->code = 'eth';
-        $exchange2->rate = $eth_price;
+        $exchange2->rate = number_format($eth_price,6);
         $exchange2->save();
         Log::info('price eth updated to '.$eth_price);
 
         $exchange3 = new Exchange();
         $exchange3->code = 'xrp';
-        $exchange3->rate = $xrp_price;
+        $exchange3->rate = number_format($xrp_price,6);
         $exchange3->save();
         Log::info('price xrp updated to '.$xrp_price);
     }
