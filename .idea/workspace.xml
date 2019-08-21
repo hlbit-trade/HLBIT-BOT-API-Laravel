@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6b5cd5ae-f857-4dd8-9cba-29d8c9d451a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/BotRun.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/BotRun.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/trade.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/trade.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,19 +19,41 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/log.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/trade.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+            <state relative-caret-position="144">
+              <caret line="185" column="82" selection-start-line="185" selection-start-column="82" selection-end-line="185" selection-end-column="82" />
+              <folding>
+                <element signature="e#5053#12264#0#HTML" />
+                <element signature="e#5678#12134#0#HTML" />
+                <element signature="e#8777#8820#0#HTML" expanded="true" />
+                <element signature="e#9857#9900#0#HTML" expanded="true" />
+                <element signature="e#10932#10975#0#HTML" expanded="true" />
+                <element signature="e#16021#16064#0#HTML" expanded="true" />
+                <element signature="e#17101#17144#0#HTML" expanded="true" />
+                <element signature="e#18176#18219#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="111" column="28" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+              <folding>
+                <element signature="e#40#57#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="342">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -38,37 +61,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="182" column="33" selection-start-line="182" selection-start-column="33" selection-end-line="182" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotRun.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="59" column="92" selection-start-line="59" selection-start-column="92" selection-end-line="59" selection-end-column="92" />
+            <state relative-caret-position="448">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="213" selection-end-column="9" />
               <folding>
-                <element signature="e#40#60#0#PHP" expanded="true" />
-                <element signature="e#1225#1432#0#PHP" />
-                <element signature="e#1746#1959#0#PHP" />
-                <element signature="e#1972#2154#0#PHP" />
-                <element signature="e#2237#2444#0#PHP" />
-                <element signature="e#2457#2635#0#PHP" />
-                <element signature="e#2851#3641#0#PHP" />
-                <element signature="e#3656#4436#0#PHP" />
-                <element signature="e#4458#4675#0#PHP" />
+                <element signature="e#862#7949#0#PHP" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -76,8 +73,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotThirty.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2869">
-              <caret line="155" column="13" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+            <state relative-caret-position="581">
+              <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+              <folding>
+                <element signature="e#858#7945#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,37 +85,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotSixty.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2489">
-              <caret line="135" column="55" selection-start-line="135" selection-start-column="55" selection-end-line="135" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/trade.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2413">
-              <caret line="127" column="80" selection-start-line="127" selection-start-column="80" selection-end-line="127" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="35" column="66" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Console/Commands/AutoCancel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+            <state relative-caret-position="410">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
-                <element signature="e#40#60#0#PHP" expanded="true" />
+                <element signature="e#856#7943#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -153,7 +126,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_07_09_083415_alter_setting_table_add_globalprice.php" />
         <option value="$PROJECT_DIR$/app/Setting.php" />
         <option value="$PROJECT_DIR$/resources/views/log.blade.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/BotFive.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/BotOne.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/BotTen.php" />
@@ -164,12 +136,13 @@
         <option value="$PROJECT_DIR$/app/Console/Commands/PriceUpdate.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/BotSixty.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/BotThirty.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/history.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/trade.blade.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/AutoCancel.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php" />
         <option value="$PROJECT_DIR$/app/Console/Commands/BotRun.php" />
+        <option value="$PROJECT_DIR$/resources/views/trade.blade.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
       </list>
     </option>
   </component>
@@ -270,6 +243,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,11 +293,15 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HLBIT-API-with-Laravel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HLBIT-API-with-Laravel" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -724,13 +702,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74313000" />
+    <option name="totallyTimeSpent" value="74830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1920" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13129689" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1404073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -745,7 +723,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.1901489" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.19473082" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -845,13 +823,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/Bot:Five.php" />
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/LogActivity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -928,17 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2109">
-          <caret line="116" column="62" selection-start-line="116" selection-start-column="62" selection-end-line="116" selection-end-column="62" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-            <element signature="e#456#617#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/PriceUpdate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1159">
@@ -972,22 +932,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotThirty.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2869">
-          <caret line="155" column="13" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+        <state relative-caret-position="581">
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+          <folding>
+            <element signature="e#858#7945#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotSixty.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2489">
-          <caret line="135" column="55" selection-start-line="135" selection-start-column="55" selection-end-line="135" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/trade.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2413">
-          <caret line="127" column="80" selection-start-line="127" selection-start-column="80" selection-end-line="127" selection-end-column="80" />
+        <state relative-caret-position="410">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="e#856#7943#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1017,8 +976,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/BotFiveteen.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="182" column="33" selection-start-line="182" selection-start-column="33" selection-end-line="182" selection-end-column="50" />
+        <state relative-caret-position="448">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="213" selection-end-column="9" />
+          <folding>
+            <element signature="e#862#7949#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,6 +998,40 @@
             <element signature="e#2851#3641#0#PHP" />
             <element signature="e#3656#4436#0#PHP" />
             <element signature="e#4458#4675#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/trade.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="185" column="82" selection-start-line="185" selection-start-column="82" selection-end-line="185" selection-end-column="82" />
+          <folding>
+            <element signature="e#5053#12264#0#HTML" />
+            <element signature="e#5678#12134#0#HTML" />
+            <element signature="e#8777#8820#0#HTML" expanded="true" />
+            <element signature="e#9857#9900#0#HTML" expanded="true" />
+            <element signature="e#10932#10975#0#HTML" expanded="true" />
+            <element signature="e#16021#16064#0#HTML" expanded="true" />
+            <element signature="e#17101#17144#0#HTML" expanded="true" />
+            <element signature="e#18176#18219#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="111" column="28" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

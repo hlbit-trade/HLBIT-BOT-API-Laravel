@@ -108,6 +108,14 @@ class HomeController extends Controller
 
         return redirect('/trade');
     }
+    public function settingUpdate(Request $request){
+        dd($request->all());
+        $data = new Setting();
+        $request['user_id'] = auth()->user()->id;
+        $data->create($request->all());
+
+        return redirect('/trade');
+    }
 
     public function history(){
         $market = 'btcusd';
