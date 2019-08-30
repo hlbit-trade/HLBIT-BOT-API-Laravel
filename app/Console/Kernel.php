@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('price:update')->cron('13-59/20 * * * *');
+        $schedule->command('price:update')->cron('13-59/15 * * * *');
         $schedule->command('bot:run')->everyMinute();
 
         $schedule->command('bot:one')->everyMinute();
