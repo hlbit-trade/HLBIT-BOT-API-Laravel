@@ -35,7 +35,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('bot:sixty')->hourly();
 
 
-        $schedule->command('auto:cancel')->everyMinute();
+        $schedule->command('auto:cancel')->cron('2-59/15 * * * *');
     }
 
     /**

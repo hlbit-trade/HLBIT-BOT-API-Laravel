@@ -44,13 +44,13 @@ class AutoCancel extends Command
         foreach($setting as $ini){
             $user = User::find($ini->user_id);
             $list_order = executeApi('listOrder',['pair'=>$ini->pair],$user);
-            $count_pending = 0;
-            foreach ($list_order['data'] as $its){
-                if($its['status'] == 'pending'){
-                    $count_pending += 1;
-                }
-            }
-            if($count_pending > 16){
+//            $count_pending = 0;
+//            foreach ($list_order['data'] as $its){
+//                if($its['status'] == 'pending'){
+//                    $count_pending += 1;
+//                }
+//            }
+//            if($count_pending > 16){
                 foreach ($list_order['data'] as $its){
                     if($its['status'] == 'pending'){
                         $cancel = executeApi('cancelOrder',['order_id'=>$its['id']],$user);
@@ -61,7 +61,7 @@ class AutoCancel extends Command
                         break;
                     }
                 }
-            }
+//            }
         }
     }
 }
